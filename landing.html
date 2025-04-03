@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaosThermo</title>
+  <style>
+    :root {
+      --orange: #F7931A;
+      --navy: #0D1B2A;
+      --light: #f4f4f4;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--dark);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo img {
+      height: 40px;
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--light);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 8rem 2rem;
+      background: url('https://images.unsplash.com/photo-1502303756781-d45f2511a53c?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--light);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-inline: auto;
+      color: var(--light);
+    }
+
+    .hero .cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero .cta a {
+      background: var(--orange);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      gap: 2rem;
+    }
+
+    .feature {
+      max-width: 300px;
+    }
+
+    .visual {
+      background-color: #111;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .visual img {
+      max-width: 300px;
+      margin-bottom: 1rem;
+    }
+
+    .contact {
+      background-color: #0d0d0d;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      background-color: var(--orange);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .features {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/images/kaos_logo.png" alt="Logo Kaos Chauffage">
+    </div>
+    <nav>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Chaleur structurée, énergie intelligente</h1>
+    <p>Une solution de chauffage révolutionnaire utilisant la puissance des mineurs de Bitcoin.</p>
+    <div class="cta">
+      <a href="#contact">Demander une démo</a>
+      <a href="#about">En savoir plus</a>
+    </div>
+  </section>
+
+  <section class="features" id="solutions">
+    <div class="feature">
+      <h3>♻️ Énergie récupérée</h3>
+      <p>Nous transformons la chaleur des mineurs en confort utile.</p>
+    </div>
+    <div class="feature">
+      <h3>⚙️ Technologie de pointe</h3>
+      <p>Contrôle intelligent, API locale, intégration flexible.</p>
+    </div>
+    <div class="feature">
+      <h3>🌱 Écologique & rentable</h3>
+      <p>Réduction des coûts et empreinte carbone optimisée.</p>
+    </div>
+  </section>
+
+  <section class="visual" id="about">
+    <img src="/images/boitier_mockup.png" alt="Boîtier KaosThermo" />
+    <p>Le cerveau derrière votre nouvelle source de chaleur.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Courriel">
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Kaos Chauffage — Tous droits réservés
+  </footer>
+</body>
+</html>
